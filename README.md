@@ -1,8 +1,8 @@
-## mazentouati/snacks
+## mazentouati/snacksconsole
 
 This is the website's repository for snacks console.
 
-# What's snacks ?
+# What's snacks console ?
 
 Snacks console is an intuitive browser-based SQL console to run and save SQL queries.
 
