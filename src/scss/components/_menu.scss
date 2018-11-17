@@ -1,0 +1,128 @@
+.menu {
+  border-bottom: 1px solid $color-border-inactive;
+}
+
+.menu > .container{
+  display: flex;
+  align-items: center;
+}
+
+.menu-links {
+  margin-left: auto;
+  display: none;
+}
+
+.menu-mobile {
+  margin-left: auto;
+
+  & .icon {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+
+  .menu-links  {
+    display: block;
+  }
+
+  .menu-mobile  {
+    display: none;
+  }
+
+}
+
+
+.mobileMenu {
+  position: fixed;
+
+  transition: all ease 300ms;
+  
+  right: 50%;
+
+  z-index: 55;
+
+  background-color: rgba($color-body, .95);
+  opacity: 0;
+  height: 0;
+  width: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.mobileMenu-item {
+  padding: $large-padding 0;
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  &:hover, &:active, &:focus {
+    opacity: 1;
+    color: white;
+  }
+}
+
+.menu-item {
+  padding: $padding $large-padding;
+  color: lighten($color-body, 10%);
+  text-decoration: none;
+  display: inline-block;
+
+  border-right: 1px solid $color-border;
+
+  &:hover {
+    color: $color-body;
+  }
+
+  &:first-child {
+      border-left: 1px solid $color-border;
+  }
+}
+
+.menu-links>.menu-item:last-child {
+  // padding-right: 0;
+}
+
+.menu-item.menu-branding {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  border: 0;
+}
+
+.menu-branding-logo {
+  width: 25px;
+  margin-right: $margin;
+  
+}
+
+.menu-branding-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-branding-text-content {
+  margin: 0;
+}
+
+.menu-branding-text-tag {
+  font-size: 13px;
+    color: $color-muted;
+
+  & > a {
+    color: $color-primary;
+    text-decoration: none;
+  }
+}
+
+.terminal-user {
+  color: $color-primary;
+  margin-right: $slim-margin;
+  font-weight: 400;
+  text-decoration: none;
+}

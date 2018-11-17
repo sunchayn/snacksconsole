@@ -1,0 +1,26 @@
+.screenshots {
+  box-shadow: 0 0 20px 0 rgba($color-body, 0.2);
+  z-index: 555;
+  position: relative;
+  border: 1px solid darken(white, 70%);;
+
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+  margin: -150px auto 0 auto;
+  max-width: 1100px;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  .screenshots {
+      display: block;
+  }
+}
+
+.screenshots-item {
+  // line-height: 0;
+  & > img {
+    max-width: 100%;
+    height: auto;
+  }
+}

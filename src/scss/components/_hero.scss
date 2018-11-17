@@ -1,0 +1,78 @@
+.hero {
+  flex: 1px;
+  display: flex;
+  background: $color-body;
+  background: linear-gradient(
+    nth($hero-background-color, 1),
+    nth($hero-background-color, 2)
+  );
+
+  border-bottom: 1px solid $color-border;
+
+}
+
+.hero > .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content {
+  
+  text-align: center;
+
+
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  .hero-content {
+        padding-bottom: 150px;
+  }
+}
+
+.hero-content-title {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: $slim-margin;
+  & > span {
+    font-size: 14px;
+    line-height: 1;
+    vertical-align: middle;
+    background: rgba(#fff, 0.1);
+    display: inline-block;
+    padding: $slim-padding $padding;
+    border-radius: 15px;
+    user-select: none;
+    color: white;
+  }
+
+}
+.hero-content-heading {
+  color: white;
+  font-size: 2.5rem;
+  margin-top: $slim-margin;
+  margin-bottom: $slim-margin;
+}
+
+.hero-content-tagline {
+  color: darken(white, 60%);
+  font-size: 1rem;
+  margin-top: $slim-margin;
+  margin-bottom: $large-margin;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+
+  .hero-content-title {
+    font-size: 2rem;
+  }
+  .hero-content-heading {
+    font-size: 3rem;
+  }
+
+  .hero-content-tagline  {
+    font-size: 1rem;
+  }
+
+}

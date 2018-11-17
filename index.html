@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks Console - Run and save SQL queries in the browser</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="public/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/static/favicon/favicon-16x16.png">
+  <!-- <link rel="manifest" href="public/static/site.webmanifest"> -->
+  <link rel="mask-icon" href="public/static/favicon/safari-pinned-tab.svg" color="#0090c1">
+
+  <link rel="stylesheet" href="public/css/app.min.css">
+</head>
+<body>
+
+  <header class="l-header">
+    <nav class="menu">
+      <div class="container">
+        <div class="menu-item menu-branding">
+          <a href="https://mazentouati.github.io/snacks/" class="terminal-user">@snacks $ </a> console
+        </div>
+        <div class="menu-links">
+          <a href="#download" class="menu-item">
+            <i class="download icon"></i>
+            Download
+          </a><a href="documentation.html" class="menu-item">
+            <i class="file alternate outline icon"></i>
+            Documentation
+          </a>
+        </div>
+        <div class="menu-mobile">
+          <a href="#menu" class="menu-item toggle-menu"><i class="bars icon"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="mobileMenu" id="mobile-menu">
+      <a href="#close" class="mobileMenu-item toggle-menu"><i class="times icon"></i></a>
+      <a href="#download" class="mobileMenu-item toggle-menu"><i class="download icon"></i>Download</a>
+      <a href="documentation.html" class="mobileMenu-item"><i class="file alternate outline icon"></i>Documentation</a>
+    </nav>
+
+    <div class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-content-title">snacks@console <span>v 0.1.0</span></h1>
+          <h1 class="hero-content-heading">Intuitive browser-based SQL Console</h1>
+          <p class="hero-content-tagline">write and run your queries, fetch and bookmark results all in the browser</p>
+          <a href="#download" class="button button--primary"><i class="download icon"></i>Download</a>
+          <a href="https://github.com/mazentouati/snacks-console" class="button"><i class="github icon"></i>Github</a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <section class="l-screenshots">
+    <div class="container">
+      <div class="screenshots">
+
+        <div class="screenshots-item">
+          <img src="public/static/screenshots/snacksconsole.gif" alt="screen shot 1">
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <section class="l-homepage-content">
+    <div class="container container--half">
+      <div class="guideline">
+        <h1 class="guideline-heading">Usage guideline</h1>
+        <p class="guideline-paragraphe">Snacks@console is a PHP based application. Before you use it, you have to make sure that your system is ready to run PHP applications. All web server such as <a href="https://laragon.org/" target="_blank">Laragon</a> (recommended) or <a href="https://www.apachefriends.org" target="_blank">XAMPP</a> provide the requirement to run a PHP based application.</p>
+
+        <p class="guideline-paragraphe">After you setup your webserver. Open the command line inside the web server's root directory, usally <code>www</code>, and follow along the installation process</p>
+
+        <h3 class="guideline-heading" id="download">Using composer</h3>
+        <p class="guideline-paragraphe">
+          <code class="guideline-terminal"><span class="guideline-terminal-anchor">$ </span><span>composer create-project mazentouati/snacks-console "console"</span></code>
+        </p>
+        <h3 class="guideline-heading">Extracting package ( not recommended )</h3>
+        <p class="guideline-paragraphe">
+          Alternatively, you can just extract the console file inside your webserver's root directory. First you need to <a href="">download</a> the package then extract it and you are ready to use the console.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container container--half">
+      Designed and developed by <a href="">@mazen touati</a>, licensed under MIT License. part of  <a href="">snacks project</a>
+    </div>
+  </footer>
+
+  <script src="public/js/vendor.js"></script>
+  <script src="public/js/bundle.js"></script>
+</body>
+</html>

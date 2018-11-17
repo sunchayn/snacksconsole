@@ -1,0 +1,43 @@
+.guideline {
+
+
+  & a {
+    color: $color-primary;
+  }
+
+  & code {
+    background-color: #f9f9fa;
+    display: inline-block;
+    padding: 5px 8px;
+    line-height: 1;
+    border-radius: 10px;
+  }
+}
+
+code.guideline-terminal {
+  background: $color-body;
+  background: linear-gradient(
+    nth($hero-background-color, 1),
+    nth($hero-background-color, 2)
+  );
+  color: white;
+  width: 100%;
+  text-align: left;
+  border-radius: 10px;
+
+  display: flex;
+}
+
+.guideline-terminal-anchor {
+  user-select: none;
+  color: $color-primary;
+  margin-right: $margin;
+}
+
+.guideline-heading {
+  margin-bottom: $margin;
+}
+
+.guideline-paragraphe {
+  line-height: 1.8;
+}

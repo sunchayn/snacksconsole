@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+
+  padding: $padding $large-padding;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 27px;
+
+  text-transform: uppercase;
+
+  margin-right: $margin;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.button--primary {
+  background-color: $color-primary;
+  border-color: $color-primary-lighter;
+}

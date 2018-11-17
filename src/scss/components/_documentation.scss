@@ -1,0 +1,23 @@
+.doc-wrapper {
+  flex-grow: 1;
+}
+
+.doc-introduction {
+  width: 100%;
+  text-align: center;
+
+  & h2, & h3 {
+    font-weight: 300;
+  }
+
+  & h2 {
+    margin-bottom: $slim-margin;
+  }
+
+}
+
+.doc-logo {
+  width: 75px;
+  height: auto;
+  margin-bottom: $large-margin;
+}
